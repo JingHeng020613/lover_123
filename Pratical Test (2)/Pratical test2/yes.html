@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>成功页面</title>
+    <style>
+        body {
+            background-color: #ffe6e6;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin-top: 10%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        img {
+            width: 150px;
+        }
+        h1 {
+            color: #703d57;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        button {
+            font-size: 18px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            color: white;
+            border-radius: 5px;
+        }
+        #refresh{
+            background-color: #ff6b6b;
+        }
+    </style>
+</head>
+<body onload="acceptLove()">  <!-- 页面加载时执行 acceptLove() -->
+    <div class="container">
+        <img src="c:\Users\Asus\Documents\SEM 6 REPORT\Pratical Test (2)\Pratical test2\WhatsApp Image 2025-02-18 at 10.46.54_19228e3a.jpg" alt="可爱角色">
+        <h1>我们终于在一起了，爱你哟❤️</h1>
+        <div class="buttons">
+            <button id="refresh" onclick="redirectToRefresh()">重新再来</button>
+        </div>
+    </div>
+
+    <script>
+        function acceptLove() {
+            alert("耶！我好开心！❤️");
+        }
+        function redirectToRefresh() {
+            window.location.href = "表白.html"; // "可以" 跳转到 yes.html
+        }
+    </script>
+</body>
+</html>

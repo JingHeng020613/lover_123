@@ -1,0 +1,66 @@
+ <!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>心碎了 💔</title>
+    <style>
+        body {
+            background-color: #000;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        .container {
+            margin-top: 10%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        img {
+            width: 150px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        button {
+            font-size: 18px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            color: white;
+            border-radius: 5px;
+        }
+        #yes {
+            background-color: #ff6b6b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="c:\Users\Asus\Documents\SEM 6 REPORT\Pratical Test (2)\Pratical test2\WhatsApp Image 2025-02-18 at 17.29.44_f8690b0a.jpg" alt="可爱角色">
+        <h1>💔我真的离开了你了💔</h1>
+        <div class="buttons">
+            <button id="yes" onclick="redirectToYes()">好吧，我答应你</button>
+        </div>
+    <script>
+        function finalChance() {
+            alert("这次真的最后一次机会了哦！😢");
+        }
+
+        function redirectToYes() {
+            window.location.href = "yes.html"; // "可以" 跳转到 yes.html
+        }
+
+    </script>
+    </div>
+</body>
+</html>

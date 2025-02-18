@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表白网页</title>
+    <style>
+        body {
+            background-color: #ffe6e6;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin-top: 10%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        img {
+            width: 150px;
+        }
+        h1 {
+            color: #703d57;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        button {
+            font-size: 18px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            color: white;
+            border-radius: 5px;
+        }
+        #yes {
+            background-color: #ff6b6b;
+        }
+        #no {
+            background-color: #4a90e2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="c:\Users\Asus\Documents\SEM 6 REPORT\Pratical Test (2)\Pratical test2\WhatsApp Image 2025-02-18 at 17.29.44_74588aee.jpg" alt="可爱角色">
+        <h1>可以成为我的恋人吗？</h1>
+        <div class="buttons">
+            <button id="yes" onclick="redirectToYes()">可以</button>
+            <button id="no" onclick="redirectToNo()">不要</button>
+        </div>
+    </div>
+
+    <script>
+        function redirectToYes() {
+            window.location.href = "yes.html"; // "可以" 按钮跳转到 yes.html
+        }
+
+        function redirectToNo() {
+            window.location.href = "no.html"; // "不要" 按钮跳转到 no.html
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>拒绝页面</title>
+    <style>
+        body {
+            background-color: #d3d3d3;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin-top: 10%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        button {
+            font-size: 18px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            color: white;
+            border-radius: 5px;
+        }
+        img {
+            width: 150px;
+        }
+        #yes {
+            background-color: #ff6b6b;
+        }
+        #no {
+            background-color: #4a90e2;
+        }
+    </style>
+</head>
+<body onload="rejectLove()">  <!-- 页面加载时执行 rejectLove() -->
+    <div class="container">
+        <img src="c:\Users\Asus\Documents\SEM 6 REPORT\Pratical Test (2)\Pratical test2\WhatsApp Image 2025-02-18 at 17.29.43_17ff9d48.jpg" alt="可爱角色">
+        <h1>好伤心 😭</h1>
+        <div class="buttons">
+            <button id="yes" onclick="redirectToYes()">好吧，给你个机会</button>
+            <button id="no" onclick="redirectToNoAgain()">真的不要</button>
+        </div>
+    </div>
+
+    <script>
+        function rejectLove() {
+            alert("呜呜呜，你真的不考虑一下吗？🥺");
+        }
+
+        function redirectToYes() {
+            window.location.href = "yes.html"; // "可以" 跳转到 yes.html
+        }
+
+        function redirectToNoAgain() {
+            window.location.href = "no_again.html"; // "不要" 跳转到 no_again.html
+        }
+    </script>
+</body>
+</html>
